@@ -1,6 +1,6 @@
 # Static Sites module
 
-Sage Imel <sage@sagenite.net
+Sage Imel <sage@sagenite.net>
 
 This module deploys and can keep up-to-date static websites,
 and websites made with a few static site generators (currently (Jekyll)[https://github.com/mojombo/jekyll], and (Misaki)[https://github.com/liquidz/misaki]).
