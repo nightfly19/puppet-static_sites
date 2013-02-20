@@ -4,7 +4,7 @@ define static_sites::static(
   $site_name   = $title,
   $revision    = 'master',
   $provider    = 'git',
-  $ng_conf_dir = $nginx::params::nx_conf_dir
+  $nx_conf_dir = $nginx::params::nx_conf_dir,
   $latest      = false,
 ) {
   $repo_dir     = "${static_sites::home}/${dir_name}"
