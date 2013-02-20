@@ -1,0 +1,13 @@
+server {
+  root <%= @web_dir %>;
+  server_name <%= @site_name %> www.<%= @site_name %>;
+  index index.html index.htm;
+
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+
+  location ~ "/\.git/" {
+    deny all;
+  }
+}
