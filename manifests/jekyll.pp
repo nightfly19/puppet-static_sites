@@ -30,7 +30,7 @@ define static_sites::jekyll(
   exec{$jekyll_exec:
     path        => ["/bin","/usr/bin","/usr/local/bin"],
     provider    => shell,
-    command     => 'jekyll',
+    command     => 'jekyll build',
     cwd         => $repo_dir,
     user        => $static_sites::user,
     notify      => Exec[$rsync_exec],
